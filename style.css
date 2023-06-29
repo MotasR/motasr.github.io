@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:100,300,400,500,700,100italic,300italic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap');
+
 
 * {
     box-sizing: border-box;
@@ -15,8 +16,25 @@ body {
     
 }
 
+h1, h2, h3 {
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #1F2937;
+    margin: 30px;
+}
+
+p, ul {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
 .logo {
     font-weight: 500;
+    font-size: 24px;
     margin-right: 40px;
 }
 
@@ -46,10 +64,14 @@ button:hover {
     
 }
 
+.hero, .footer {
+    background-color: #1F2936;
+
+}
+
 .hero {
     
-    background-color: #1F2936;
-    color: white;
+    color: #F9FAF8;
     display: flex;
     padding: 100px;
     align-items: start;
@@ -59,11 +81,20 @@ button:hover {
     justify-content: center;
 }
 
+h1 {
+    font-size: 48px;
+}
+
 .hero-text {
+    flex: 1;
+}
+
+.hero-text>p {
     /* border: solid red; */
     flex: 1;
     min-width: 300px;
     max-width: 482px;
+    font-size: 18px;
 }
 
 .placeholder-img {
@@ -73,15 +104,18 @@ button:hover {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    background-color: #6D747C;
+    /* max-width: 300px; */
+    min-width: 300px;
+    height: 200px;
+
+
+
 }
 
-.placeholder-card {
-    max-width: 300px;
-    background-color: #6D747C;
-    min-width: 300px;
-    height: 150px;
+.placeholder-text {
     font-size: 13px;
-    flex: 1;
+    /* flex: 1; */
     justify-content: center;
     align-items: center;
     display: flex;
@@ -89,20 +123,6 @@ button:hover {
 
 }
 
-
-h1, h2, h3 {
-    margin: 0;
-}
-
-h2 {
-    text-align: center;
-    margin: 30px;
-}
-
-p, ul {
-    font-size: 14px;
-    color: #E5E7EB;
-}
 
 button {
     background-color: #3E87EF;
@@ -164,16 +184,17 @@ button {
 }
 
 .quote-container {
-    min-width: 350px;
-    max-width: 500px;
+    min-width: 450px;
+    max-width: 600px;
     margin: 50px;
     
 }
 
 .quote-text {
     font-style: italic;
-    font-size: 22px;
+    font-size: 36px;
     font-weight: 100;
+    color: #1F2936;
 
 }
 
@@ -221,7 +242,6 @@ h3 {
 
 .footer {
     /* flex: 1; */
-    background-color: #1F2936;
     display: flex;
     text-align: center;
     align-items: center;
