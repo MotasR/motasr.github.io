@@ -13,6 +13,7 @@ body {
     flex-direction: column;
     font-family: Roboto, serif;
     margin: 0;
+    min-width: 550px;
     
 }
 
@@ -49,7 +50,7 @@ button:hover {
     width: 100%;
     color: white;
     padding: 11px 100px;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     align-items: center;
 }
 
@@ -61,6 +62,7 @@ button:hover {
     margin: 0;
     margin-left: auto;
     gap: 16px;
+    text-align: right;
     
 }
 
@@ -150,8 +152,37 @@ button {
     gap: 33px;
     margin-bottom: 50px;
     flex-wrap: wrap;
-    min-width: 400px;
+    /* min-width: 400px; */
 
+}
+
+@media only screen and (max-width: 870px){
+    * {
+        /* border: solid red; */
+    }
+  .carousel {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .hero-text {
+    /* border: solid palegreen; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero {
+    gap: 24px
+  }
+
+  button {
+    width: 200px;
+    height: 70px;
+    font-size: 18px;
+  }
 }
 
 .item {
@@ -184,7 +215,7 @@ button {
 }
 
 .quote-container {
-    min-width: 450px;
+    /* min-width: 450px; */
     max-width: 600px;
     margin: 50px;
     
